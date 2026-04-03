@@ -5,7 +5,7 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.studentmanager.entities.Order;
+import com.example.fruitapp.entities.Order;
 
 import java.util.List;
 
