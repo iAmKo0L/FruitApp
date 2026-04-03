@@ -2,4 +2,19 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Bảng màu chính - tối giản, chuyên nghiệp -->
+    <color name="primary">#2C3E50</color>
+    <color name="primary_dark">#1A252F</color>
+    <color name="secondary">#34495E</color>
+    <color name="accent">#2980B9</color>
+    <color name="green">#27AE60</color>
+    <color name="red">#C0392B</color>
+    <color name="background">#F4F6F8</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="text_primary">#2C3E50</color>
+    <color name="text_secondary">#7F8C8D</color>
+    <color name="text_hint">#BDC3C7</color>
+    <color name="price_color">#2980B9</color>
 </resources>

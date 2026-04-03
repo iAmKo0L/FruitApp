@@ -1,3 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FruitApp</string>
+    <string name="app_name">FruitShop</string>
+
+    <!-- Login -->
+    <string name="welcome_back">Chào mừng trở lại</string>
+    <string name="login_subtitle">Đăng nhập vào tài khoản của bạn</string>
+    <string name="username">Tên đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="hint_username">Nhập tên đăng nhập</string>
+    <string name="hint_password">Nhập mật khẩu</string>
+    <string name="btn_login">ĐĂNG NHẬP</string>
+    <string name="demo_account">Tài khoản demo:</string>
+    <string name="login_failed">Sai tên đăng nhập hoặc mật khẩu</string>
+    <string name="login_success">Đăng nhập thành công</string>
+
+    <!-- Main -->
+    <string name="app_slogan">Hoa quả tươi ngon mỗi ngày</string>
+    <string name="status">Trạng thái</string>
+    <string name="welcome_guest">Vui lòng đăng nhập để mua hàng</string>
+    <string name="welcome_user">Xin chào, %1$s!</string>
+    <string name="btn_view_products">Xem Danh Sách Hoa Quả</string>
+    <string name="btn_view_categories">Xem Danh Mục Hoa Quả</string>
+    <string name="btn_current_cart">Hóa Đơn Hiện Tại</string>
+    <string name="btn_logout">Đăng Xuất</string>
+    <string name="confirm_logout">Bạn có chắc muốn đăng xuất?</string>
+    <string name="cancel">Hủy</string>
+
+    <!-- Product -->
+    <string name="product_list">Danh Sách Sản Phẩm</string>
+    <string name="product_detail">Chi Tiết Sản Phẩm</string>
+    <string name="product_count">Tìm thấy %1$d sản phẩm</string>
+    <string name="stock_label">Còn lại: %1$d</string>
+    <string name="description_label">Mô tả sản phẩm</string>
+    <string name="quantity_label">Số lượng:</string>
+    <string name="btn_add_to_cart">THÊM VÀO HÓA ĐƠN</string>
+    <string name="added_to_cart">Đã thêm vào hóa đơn</string>
+
+    <!-- Register -->
+    <string name="register_title">Tạo Tài Khoản</string>
+    <string name="register_subtitle">Điền thông tin để đăng ký tài khoản mới</string>
+    <string name="full_name">Họ và tên</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="hint_full_name">Nhập họ và tên</string>
+    <string name="hint_email">Nhập email (tuỳ chọn)</string>
+    <string name="hint_confirm_password">Nhập lại mật khẩu</string>
+    <string name="btn_register">ĐĂNG KÝ</string>
+    <string name="already_have_account">Đã có tài khoản? Đăng nhập</string>
+    <string name="no_account">Chưa có tài khoản? Đăng ký</string>
+
+    <!-- Cart -->
+    <string name="cart_title">Hóa Đơn Của Bạn</string>
+    <string name="cart_empty">Hóa đơn trống</string>
+    <string name="total_amount">Tổng tiền: %1$s</string>
+    <string name="btn_checkout">THANH TOÁN</string>
+    <string name="checkout_confirm">Xác nhận thanh toán cho hóa đơn này?</string>
+    <string name="checkout_success">Thanh toán thành công!</string>
 </resources>
