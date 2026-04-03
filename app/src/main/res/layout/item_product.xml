@@ -65,7 +65,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="11sp"
-                android:textColor="@color/text_secondary" />
+                android:textColor="@color/text_secondary"
+                android:paddingBottom="2dp" />
+
+            <TextView
+                android:id="@+id/tvProductExpiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </LinearLayout>

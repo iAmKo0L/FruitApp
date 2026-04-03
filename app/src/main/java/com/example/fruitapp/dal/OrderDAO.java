@@ -31,4 +31,7 @@ public interface OrderDAO {
 
     @Query("UPDATE orders SET status = 'PAID' WHERE id = :orderId")
     void markAsPaid(int orderId);
+
+    @Query("UPDATE orders SET paid_date = :paidDate WHERE id = :orderId")
+    void updatePaidDate(int orderId, long paidDate);
 }

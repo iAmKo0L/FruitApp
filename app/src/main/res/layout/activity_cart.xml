@@ -46,7 +46,15 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/background"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvCartOrderDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:paddingBottom="8dp" />
 
         <TextView
             android:id="@+id/tvCartTotal"

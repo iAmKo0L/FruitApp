@@ -109,12 +109,23 @@
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                         android:orientation="horizontal" android:paddingBottom="8dp">
                         <TextView android:layout_width="0dp" android:layout_height="wrap_content"
-                            android:layout_weight="1" android:text="Ngày tạo"
+                            android:layout_weight="1" android:text="Tạo hóa đơn"
                             android:textColor="@color/text_secondary" android:textSize="13sp" />
                         <TextView android:id="@+id/tvInvoiceDate" android:layout_width="0dp"
                             android:layout_height="wrap_content" android:layout_weight="1"
                             android:textColor="@color/text_primary" android:textSize="13sp"
                             android:gravity="end" />
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:paddingBottom="8dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="Thời điểm đặt hàng"
+                            android:textColor="@color/text_secondary" android:textSize="13sp" />
+                        <TextView android:id="@+id/tvInvoicePaidDate" android:layout_width="0dp"
+                            android:layout_height="wrap_content" android:layout_weight="1"
+                            android:textColor="@color/text_primary" android:textSize="13sp"
+                            android:textStyle="bold" android:gravity="end" />
                     </LinearLayout>
 
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"

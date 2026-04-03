@@ -18,6 +18,7 @@ import com.example.fruitapp.entities.Category;
 import com.example.fruitapp.entities.Order;
 import com.example.fruitapp.entities.OrderDetail;
 import com.example.fruitapp.entities.Product;
+import com.example.fruitapp.utils.DateUtils;
 import com.example.fruitapp.utils.PriceUtils;
 import com.example.fruitapp.utils.SessionManager;
 
@@ -101,6 +102,11 @@ public class ProductDetailActivity extends AppCompatActivity {
         ((TextView) findViewById(R.id.tvProductName)).setText(product.name);
         ((TextView) findViewById(R.id.tvProductPrice)).setText(PriceUtils.format(product.price));
         ((TextView) findViewById(R.id.tvProductStock)).setText(getString(R.string.stock_label, product.stock));
+
+        TextView tvExpiry = findViewById(R.id.tvProductExpiry);
+        tvExpiry.setText(DateUtils.formatExpiryLabel(product.expiryDate));
+        tvExpiry.setTextColor(DateUtils.getExpiryColor(product.expiryDate));
+
         ((TextView) findViewById(R.id.tvProductDescription)).setText(product.description);
 
         String categoryText = getString(R.string.status); // Fallback

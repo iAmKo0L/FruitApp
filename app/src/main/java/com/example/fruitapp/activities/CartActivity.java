@@ -19,6 +19,7 @@ import com.example.fruitapp.dal.AppDB;
 import com.example.fruitapp.entities.CartItem;
 import com.example.fruitapp.entities.Order;
 import com.example.fruitapp.entities.OrderDetail;
+import com.example.fruitapp.utils.DateUtils;
 import com.example.fruitapp.utils.PriceUtils;
 import com.example.fruitapp.utils.SessionManager;
 
@@ -28,7 +29,7 @@ public class CartActivity extends AppCompatActivity {
     private SessionManager sessionManager;
     private AppDB db;
     private RecyclerView recyclerView;
-    private TextView tvTotal, tvEmpty;
+    private TextView tvTotal, tvEmpty, tvOrderDate;
     private View layoutFooter;
     private Order currentPendingOrder;
 
@@ -51,6 +52,7 @@ public class CartActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         tvTotal = findViewById(R.id.tvCartTotal);
         tvEmpty = findViewById(R.id.tvCartEmpty);
+        tvOrderDate = findViewById(R.id.tvCartOrderDate);
         layoutFooter = findViewById(R.id.layoutCartFooter);
 
         if (!sessionManager.isLoggedIn()) {
@@ -93,6 +95,7 @@ public class CartActivity extends AppCompatActivity {
         tvEmpty.setVisibility(View.GONE);
         recyclerView.setVisibility(View.VISIBLE);
         layoutFooter.setVisibility(View.VISIBLE);
+        tvOrderDate.setText("Tạo lúc: " + DateUtils.formatDateTime(currentPendingOrder.orderDate));
 
         final int orderId = currentPendingOrder.id;
 
@@ -183,6 +186,7 @@ public class CartActivity extends AppCompatActivity {
         double total = db.orderDetailDAO().getTotalByOrderId(currentPendingOrder.id);
         db.orderDAO().updateTotal(currentPendingOrder.id, total);
         db.orderDAO().markAsPaid(currentPendingOrder.id);
+        db.orderDAO().updatePaidDate(currentPendingOrder.id, System.currentTimeMillis());
         Toast.makeText(this, "Thanh toán thành công!", Toast.LENGTH_SHORT).show();
 
         Intent intent = new Intent(this, InvoiceActivity.class);

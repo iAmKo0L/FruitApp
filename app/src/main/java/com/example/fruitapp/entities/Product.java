@@ -35,6 +35,9 @@ public class Product {
     @ColumnInfo(name = "category_id")
     public Integer categoryId;
 
+    @ColumnInfo(name = "expiry_date")
+    public long expiryDate;
+
     public Product() {}
 
     public Product(String name, String description, double price, int stock, Integer categoryId) {
@@ -43,5 +46,14 @@ public class Product {
         this.price = price;
         this.stock = stock;
         this.categoryId = categoryId;
+    }
+
+    public Product(String name, String description, double price, int stock, Integer categoryId, long expiryDate) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.stock = stock;
+        this.categoryId = categoryId;
+        this.expiryDate = expiryDate;
     }
 }

@@ -32,6 +32,9 @@ public class Order {
     @ColumnInfo(name = "total_amount")
     public double totalAmount;
 
+    @ColumnInfo(name = "paid_date")
+    public long paidDate;
+
     public Order() {}
 
     public Order(int userId, long orderDate, String status) {
@@ -39,5 +42,6 @@ public class Order {
         this.orderDate = orderDate;
         this.status = status;
         this.totalAmount = 0.0;
+        this.paidDate = 0;
     }
 }

@@ -17,12 +17,10 @@ import com.example.fruitapp.dal.AppDB;
 import com.example.fruitapp.entities.CartItem;
 import com.example.fruitapp.entities.Order;
 import com.example.fruitapp.entities.User;
+import com.example.fruitapp.utils.DateUtils;
 import com.example.fruitapp.utils.PriceUtils;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 public class InvoiceActivity extends AppCompatActivity {
 
@@ -48,11 +46,10 @@ public class InvoiceActivity extends AppCompatActivity {
         User user = db.userDAO().getById(order.userId);
         List<CartItem> items = db.orderDetailDAO().getCartItems(orderId);
 
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.getDefault());
-
         ((TextView) findViewById(R.id.tvInvoiceId)).setText("#" + order.id);
         ((TextView) findViewById(R.id.tvInvoiceUser)).setText(user != null ? user.fullName : "—");
-        ((TextView) findViewById(R.id.tvInvoiceDate)).setText(sdf.format(new Date(order.orderDate)));
+        ((TextView) findViewById(R.id.tvInvoiceDate)).setText(DateUtils.formatDateTime(order.orderDate));
+        ((TextView) findViewById(R.id.tvInvoicePaidDate)).setText(DateUtils.formatDateTime(order.paidDate));
         ((TextView) findViewById(R.id.tvInvoiceStatus)).setText("ĐÃ THANH TOÁN");
         ((TextView) findViewById(R.id.tvInvoiceTotal)).setText(PriceUtils.format(order.totalAmount));
 

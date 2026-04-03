@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.fruitapp.R;
 import com.example.fruitapp.activities.ProductDetailActivity;
 import com.example.fruitapp.entities.Product;
+import com.example.fruitapp.utils.DateUtils;
 import com.example.fruitapp.utils.PriceUtils;
 
 import java.util.List;
@@ -58,6 +59,8 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         holder.tvName.setText(product.name);
         holder.tvPrice.setText(PriceUtils.format(product.price));
         holder.tvStock.setText("Còn: " + product.stock + " sản phẩm");
+        holder.tvExpiry.setText(DateUtils.formatExpiryLabel(product.expiryDate));
+        holder.tvExpiry.setTextColor(DateUtils.getExpiryColor(product.expiryDate));
 
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, ProductDetailActivity.class);
@@ -73,7 +76,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
 
     static class ProductViewHolder extends RecyclerView.ViewHolder {
         FrameLayout flImage;
-        TextView tvInitial, tvName, tvPrice, tvStock;
+        TextView tvInitial, tvName, tvPrice, tvStock, tvExpiry;
 
         ProductViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -82,6 +85,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
             tvName = itemView.findViewById(R.id.tvProductName);
             tvPrice = itemView.findViewById(R.id.tvProductPrice);
             tvStock = itemView.findViewById(R.id.tvProductStock);
+            tvExpiry = itemView.findViewById(R.id.tvProductExpiry);
         }
     }
 }
