@@ -12,14 +12,14 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.example.studentmanager.R;
-import com.example.studentmanager.dal.AppDB;
-import com.example.studentmanager.entities.Category;
-import com.example.studentmanager.entities.Order;
-import com.example.studentmanager.entities.OrderDetail;
-import com.example.studentmanager.entities.Product;
-import com.example.studentmanager.utils.PriceUtils;
-import com.example.studentmanager.utils.SessionManager;
+import com.example.fruitapp.R;
+import com.example.fruitapp.dal.AppDB;
+import com.example.fruitapp.entities.Category;
+import com.example.fruitapp.entities.Order;
+import com.example.fruitapp.entities.OrderDetail;
+import com.example.fruitapp.entities.Product;
+import com.example.fruitapp.utils.PriceUtils;
+import com.example.fruitapp.utils.SessionManager;
 
 public class ProductDetailActivity extends AppCompatActivity {
     private Product product;

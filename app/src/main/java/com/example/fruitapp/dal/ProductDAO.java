@@ -4,7 +4,7 @@ import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
 
-import com.example.studentmanager.entities.Product;
+import com.example.fruitapp.entities.Product;
 
 import java.util.List;
 

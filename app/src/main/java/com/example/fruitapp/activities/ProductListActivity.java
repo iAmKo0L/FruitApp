@@ -8,10 +8,10 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.studentmanager.R;
-import com.example.studentmanager.adapters.ProductAdapter;
-import com.example.studentmanager.dal.AppDB;
-import com.example.studentmanager.entities.Product;
+import com.example.fruitapp.R;
+import com.example.fruitapp.adapters.ProductAdapter;
+import com.example.fruitapp.dal.AppDB;
+import com.example.fruitapp.entities.Product;
 
 import java.util.List;
 
