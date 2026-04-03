@@ -1,10 +1,10 @@
-package com.example.studentmanager.dal;
+package com.example.fruitapp.dal;
 
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
 
-import com.example.studentmanager.entities.User;
+import com.example.fruitapp.entities.User;
 
 import java.util.List;
 

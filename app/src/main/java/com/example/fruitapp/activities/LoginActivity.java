@@ -1,4 +1,4 @@
-package com.example.studentmanager.activities;
+package com.example.fruitapp.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.example.studentmanager.R;
-import com.example.studentmanager.dal.AppDB;
-import com.example.studentmanager.entities.User;
-import com.example.studentmanager.utils.SessionManager;
+import com.example.fruitapp.R;
+import com.example.fruitapp.dal.AppDB;
+import com.example.fruitapp.entities.User;
+import com.example.fruitapp.utils.SessionManager;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText etUsername, etPassword;

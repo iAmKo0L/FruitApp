@@ -11,10 +11,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.studentmanager.R;
-import com.example.studentmanager.activities.ProductDetailActivity;
-import com.example.studentmanager.entities.Product;
-import com.example.studentmanager.utils.PriceUtils;
+import com.example.fruitapp.R;
+import com.example.fruitapp.activities.ProductDetailActivity;
+import com.example.fruitapp.entities.Product;
+import com.example.fruitapp.utils.PriceUtils;
 
 import java.util.List;
 

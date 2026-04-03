@@ -102,7 +102,7 @@ public class CartActivity extends AppCompatActivity {
                 OrderDetail detail = db.orderDetailDAO().getById(item.orderDetailId);
                 if (detail != null) {
                     // Check stock before increasing
-                    com.example.studentmanager.entities.Product p = db.productDAO().getById(item.productId);
+                    com.example.fruitapp.entities.Product p = db.productDAO().getById(item.productId);
                     if (p != null && p.stock < 1) {
                         Toast.makeText(CartActivity.this, "Sản phẩm đã hết hàng!", Toast.LENGTH_SHORT).show();
                         return;

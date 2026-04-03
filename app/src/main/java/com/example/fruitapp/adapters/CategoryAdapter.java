@@ -11,9 +11,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.studentmanager.R;
-import com.example.studentmanager.activities.ProductListActivity;
-import com.example.studentmanager.entities.Category;
+import com.example.fruitapp.R;
+import com.example.fruitapp.activities.ProductListActivity;
+import com.example.fruitapp.entities.Category;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.studentmanager.utils;
+package com.example.fruitapp.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;

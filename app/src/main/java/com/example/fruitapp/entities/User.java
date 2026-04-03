@@ -1,4 +1,4 @@
-package com.example.studentmanager.entities;
+package com.example.fruitapp.entities;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
