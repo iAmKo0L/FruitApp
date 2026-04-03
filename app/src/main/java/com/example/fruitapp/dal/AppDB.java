@@ -6,11 +6,11 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.example.studentmanager.entities.Category;
-import com.example.studentmanager.entities.Order;
-import com.example.studentmanager.entities.OrderDetail;
-import com.example.studentmanager.entities.Product;
-import com.example.studentmanager.entities.User;
+import com.example.fruitapp.entities.Category;
+import com.example.fruitapp.entities.Order;
+import com.example.fruitapp.entities.OrderDetail;
+import com.example.fruitapp.entities.Product;
+import com.example.fruitapp.entities.User;
 
 @Database(
     entities = {User.class, Category.class, Product.class, Order.class, OrderDetail.class},

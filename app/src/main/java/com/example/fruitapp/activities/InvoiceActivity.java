@@ -10,14 +10,14 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.studentmanager.MainActivity;
-import com.example.studentmanager.R;
-import com.example.studentmanager.adapters.CartItemAdapter;
-import com.example.studentmanager.dal.AppDB;
-import com.example.studentmanager.entities.CartItem;
-import com.example.studentmanager.entities.Order;
-import com.example.studentmanager.entities.User;
-import com.example.studentmanager.utils.PriceUtils;
+import com.example.fruitapp.MainActivity;
+import com.example.fruitapp.R;
+import com.example.fruitapp.adapters.CartItemAdapter;
+import com.example.fruitapp.dal.AppDB;
+import com.example.fruitapp.entities.CartItem;
+import com.example.fruitapp.entities.Order;
+import com.example.fruitapp.entities.User;
+import com.example.fruitapp.utils.PriceUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

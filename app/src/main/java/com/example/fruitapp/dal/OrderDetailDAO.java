@@ -5,8 +5,8 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.studentmanager.entities.CartItem;
-import com.example.studentmanager.entities.OrderDetail;
+import com.example.fruitapp.entities.CartItem;
+import com.example.fruitapp.entities.OrderDetail;
 
 import java.util.List;
 

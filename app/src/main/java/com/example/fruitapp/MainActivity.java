@@ -9,12 +9,12 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.studentmanager.activities.CartActivity;
-import com.example.studentmanager.activities.CategoryListActivity;
-import com.example.studentmanager.activities.LoginActivity;
-import com.example.studentmanager.activities.ProductListActivity;
-import com.example.studentmanager.dal.AppDB;
-import com.example.studentmanager.utils.SessionManager;
+import com.example.fruitapp.activities.CartActivity;
+import com.example.fruitapp.activities.CategoryListActivity;
+import com.example.fruitapp.activities.LoginActivity;
+import com.example.fruitapp.activities.ProductListActivity;
+import com.example.fruitapp.dal.AppDB;
+import com.example.fruitapp.utils.SessionManager;
 
 public class MainActivity extends AppCompatActivity {
     private SessionManager sessionManager;
